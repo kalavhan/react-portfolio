@@ -10,14 +10,12 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col">
         <Navbar />
-        <main className="flex-grow">
+        <main>
           <Routes>
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-      </div>
     </Router>
   );
 }
